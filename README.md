@@ -39,8 +39,10 @@ the entries as necessary with the details needed to access your database. The en
 
 If you are running this script on a multiuser access system then it is strongly suggested that you secure this file to prevent other users gaining access to your database. To do this you should typpe the following:
 
+```
 chown <myuser> my.ini
 chmod 0600 my.ini
+```
 
 substituting '<myuser>' for the username of the account that will be running the script.
 
