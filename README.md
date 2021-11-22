@@ -27,7 +27,8 @@ Once you have the database setup you should import the URLs into the database. T
 
 ```https://www.someplace.abc
 subsite.someplace.els
-http://subsite2.anotherplac.abc```
+http://subsite2.anotherplac.abc
+```
 
 The first two URLs will be accessed via the secure protocol, the third URL by the unsecured protocol.
 
