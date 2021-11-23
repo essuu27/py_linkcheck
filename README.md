@@ -23,7 +23,7 @@ where
 - Result is set as int(11) and records the numeric return code of a call to the related URL
 - Date is set as datetime. If possible it should be setup with the following trigger: ON UPDATE CURRENT_TIMESTAMP . This column is meant as a record for the user to check when and if a U|RL has been checked. It is not used within the script and is not necessary to the function of the script.
 
-Once you have the database setup you should import the URLs into the database. The script is designed to use secure HTTP calls by default. As such you do not have to specify the protocol of a URL unless you require a unsecured connection to the resource. A URL list would look something like this:
+Once you have the database setup you should import URLs into the database. The script is designed to use secure HTTP calls by default. As such you do not have to specify the protocol of a URL unless you require a unsecured connection to the resource. A URL list could look something like this:
 
 ```
 https://www.someplace.abc
@@ -47,5 +47,10 @@ chmod 0600 my.ini
 substituting '<myuser>' for the username of the account that will be running the script.
 
 ## The py_linkcheck.py script
-Before running the script there are a couple of configuration tweaks you may wish to make. The first is the setting which controls the number of simultaneous URL checks that the script can make. There is a variable named 'workers' on line 83. This is an integer variable and its value sets the number of concurrent web accesses the script should make.
+Before running the script there are a couple of configuration tweaks you may wish to make. The first is the setting which controls the number of simultaneous URL checks that the script can make.
+
+There is a variable named 'workers' on line 83. This is an integer variable and its value sets the number of concurrent web accesses the script should make. The higher this value is the more number of web agents the script will use. There are however limitations on the amount of web agents that the script can support. The number of web agents that the script can run concurrently is limited by factors such as network bandwidth, system memory and overall system load.
+
+The 'workers' variable is also used when setting up the connection pool to the mysql database. By default a mysql database will support upto  a maximum of 
+32 concurrent connections. You will need to contact your DBA to find out what limits may be applied to your database.
 
