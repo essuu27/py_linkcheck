@@ -79,7 +79,7 @@ def main():  # sourcery skip: for-index-underscore
 
     Put the URLs into a database and then run the script.
     """
-    # workers sets how many (web)agents are working simultaneously 
+    # workers sets how many (web)agents should be started 
     workers = 5
     # my_queue is a holder so that the agents can check that their URL is not
     # already in use
