@@ -21,7 +21,7 @@ where
 - ID is an integer, is set to autoincrement and is marked as the primary key. This ID is used internally by the script to keep track of URLs it is processing.
 - URL is set as varchar(512). This is probably a bit long but this field is meant to hold the text representation of the URL to be checked
 - Result is set as int(11) and records the numeric return code of a call to the related URL
-- Date is set as datetime. If possible it should be setup with the following trigger: ON UPDATE CURRENT_TIMESTAMP . This column is meant as a record for the user to check when and if a U|RL has been checked. It is not used within the script and is not necessary to the function of the script.
+- Date is set as datetime. If possible it should be setup with the following trigger: ON UPDATE CURRENT_TIMESTAMP . This column is meant as a record for the user to check when and if a URL has been checked. It is not used within the script and is not necessary to the function of the script.
 
 Once you have the database setup you should import URLs into the database. The script is designed to use secure HTTP calls by default. As such you do not have to specify the protocol of a URL unless you require a unsecured connection to the resource. A URL list could look something like this:
 
