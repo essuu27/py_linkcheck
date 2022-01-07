@@ -2,7 +2,7 @@
 py_linkcheck takes a long list of URLs and checks them to make sure that they are still valid and available.
 
 # Setup
-The script uses two modules: concurrent.futures and mysql-connector-python. The concurrent.futures module is included in the standard installation of python from version 3.2.
+The script uses two modules: **``concurrent.futures``** and **``mysql-connector-python``**. The concurrent.futures module is included in the standard installation of python from version 3.2.
 
 The mysql-connector-python module needs to be installed. This can be done easily by opening a console/command prompt and typing:
 
