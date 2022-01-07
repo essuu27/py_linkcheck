@@ -1,5 +1,5 @@
 # Introduction
-py_linkchecker takes a long list of URLs and checks them to make sure that they are still valid and available.
+py_linkcheck takes a long list of URLs and checks them to make sure that they are still valid and available.
 
 # Setup
 The script uses two modules: concurrent.futures and mysql-connector-python. The concurrent.futures module is included in the standard installation of python from version 3.2.
@@ -62,4 +62,4 @@ The 'workers' variable is also used when setting up the connection pool to the m
 
 Once you have the script setup and configured running the script is as easy as:
 
-'python py_linkcheck.py'
+`python py_linkcheck.py`
