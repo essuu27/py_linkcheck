@@ -51,7 +51,7 @@ chown <myuser> my.ini
 chmod 0600 my.ini
 ```
 
-substituting '<myuser>' for the username of the account that will be running the script.
+substituting `<myuser>` for the username of the account that will be running the script.
 
 ## The py_linkcheck.py script
 There is one operational setting that can be made within the script. This setting declares the maximum number of active web calls, or agents, that the script should use at any one time.
