@@ -4,7 +4,7 @@ import threading
 
 
 def webcall(my_url):
-        # Unqualified URLs should default to secure http requests
+    # Unqualified URLs should default to secure http requests
     if not my_url.startswith('http'):
         my_url = 'https://' + my_url
 
