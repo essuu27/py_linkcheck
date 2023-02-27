@@ -13,7 +13,7 @@ def agent(my_queue):
         pool_name="linkcheck"
     )
 
-    # Need cursor to communicate along the dBase pool connection
+    # Need cursor to communicate with the dBase pool connection
     cursor = my_db.cursor()
     # float_id is the lowest entry id the script will query
     float_id = 0
